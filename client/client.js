@@ -18,6 +18,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     .when('/work', {
       templateUrl: 'views/work.html',
       controller: 'WorkController'
+    })
+    .when('/shop', {
+      templateUrl: 'views/shop.html',
+      controller: 'ShopController'
     });
     $locationProvider.html5Mode(true);
 
@@ -31,5 +35,9 @@ app.controller('AboutController', ['$scope', function($scope) {
 }]);
 
 app.controller('WorkController', ['$scope', function($scope) {
+
+}]);
+
+app.controller('ShopController', ['$scope', function($scope) {
 
 }]);
