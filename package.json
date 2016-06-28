@@ -1,0 +1,23 @@
+{
+  "name": "mel_favero_pottery",
+  "version": "1.0.0",
+  "description": "Website for Mel Favero's pottery business",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js"
+  },
+  "author": "A. Brooks Nagel",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "express": "^4.13.4",
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "nodemon": "^1.9.2",
+    "path": "^0.12.7"
+  }
+}

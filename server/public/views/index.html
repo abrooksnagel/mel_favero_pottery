@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routeApp">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Mel's Pottery!</title>
+  <link href="assets/styles/styles.css" rel="stylesheet">
+  <script src="vendors/angular/angular.min.js"></script>
+  <script src="vendors/angular-route/angular-route.min.js"></script>
+  <script src="assets/scripts/client.min.js"></script>
+  <base href="/">
+</head>
+<body>
+  <header>
+      <div class = "logo">
+        <h1>Melissa Favero</h1>
+        <h2>Functional Stoneware Pottery</h2>
+      </div>
+
+      <div class= "navbuttons">
+        <a href="/home"><button>HOME</button></a>
+        <a href="/about"><button>ABOUT</button></a>
+        <a href="/work"><button>WORK</button></a>
+      </div>
+  </header>
+  
+
+  <div ng-view></div>
+
+  <footer>
+    <!-- contact info goes in here -->
+  </footer>
+</body>
+</html>
