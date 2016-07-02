@@ -44,32 +44,50 @@ table {
 }
 
 /*Styling*/
+@font-face {
+	font-family: 'Slabo 27px';
+	src: url(https://fonts.googleapis.com/css?family=Slabo+27px);
+}
+
+
+body, button {
+	font-family: 'Slabo 27px';
+}
 
 /*index.html styling*/
-.logoImage {
-	float: left;
-	padding: 1%;
-	width: 24%;
-	height: 24%;
-	transform: rotate(90deg);
-}
-
-header {
-  background-color: brown;
-}
 .logo h1 {
-  background-color: brown;
+	padding: 2% 0 0 2%;
 }
 .logo h2 {
-  background-color: brown;
+	padding: 0 0 2% 2%;
+}
+.logoImage {
+	float: left;
+	padding: 2%;
+	width: 23%;
+	height: 23%;
+	transform: rotate(90deg);
+}
+header {
+  background-color: rgb(127, 157, 149);
+}
+.logo h1 {
+  background-color: rgb(127, 157, 149);
+}
+.logo h2 {
+  background-color: rgb(127, 157, 149);
 }
 .navbuttons {
-	background-color: brown;
+	background-color: rgb(127, 157, 149);
 }
 button {
-  background-color: brown;
-
+  background-color: rgb(127, 157, 149);
 }
+footer {
+	background-color: rgb(127, 157, 149);
+}
+
+
 
 
 /*home.html styling*/
@@ -79,12 +97,16 @@ button {
 }
 
 /*work.html styling*/
-.workView img {
+.workView {
+	background-color: rgba(0, 0, 0, 0.75);
+}
+.workImages img{
 	width: 30%;
 	height: auto;
 	padding: 2%;
+	padding-right: 0;
 }
-.workView img:hover {
+.workImages img:hover {
 	position:relative;
 	width: 70%;
   height: auto;
@@ -98,14 +120,80 @@ button {
 	color: red;
 
 }
+@media screen and (max-width:400px) {
+	/*index.html styling*/
+	header {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.logo {
+		width: 100%;
+	}
+	.navbuttons {
+		width: 100%;
+	}
+	button {
+		width: 100%;
+		padding: 20px;
+	}
+	.contactInfo {
+		background-color: rgb(127, 157, 149);
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.info {
+		background-color: rgb(127, 157, 149);
+		width: 96%;
+		text-align: center;
+		padding: 2%;
+		}
+	.email {
+		background-color: rgb(127, 157, 149);
+		width: 96%;
+		text-align: center;
+		padding: 2%;
+	}
+	.phone {
+		background-color: rgb(127, 157, 149);
+		width: 96%;
+		text-align: center;
+		padding: 2%;
+	}
+	.copyright {
+		background-color: rgb(127, 157, 149);
+		width: 96%;
+		text-align: center;
+		padding: 2%;
+	}
 
+	/*about.html styling*/
 
+	.aboutView {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.aboutImage {
+		height: 100%;
+		width: 100%;
+	}
+	.aboutText {
+		flex: 1; /*This is part of option 2*/
+		/*position: absolute; /*This is part of option 1*/
+		width: 90%;
+		height: 90%;
+		bottom: 5%;
+		right: 5%;
+		background: rgba(0, 0, 0, 0.75);
+	}
+	.aboutText p {
+		color: white;
+		padding: 2%;
+	}
+}
 
-
-
-
-
-@media screen and (max-width:600px) {
+@media screen and (min-width:401px) and (max-width:600px) {
   /*index.html styling*/
 	header {
     display: flex;
@@ -121,29 +209,70 @@ button {
 		width: 100%;
 		padding: 20px;
 	}
+	.contactInfo {
+		background-color: rgb(127, 157, 149);
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.info {
+		background-color: rgb(127, 157, 149);
+		width: 96%;
+		text-align: center;
+		padding: 2%;
+		}
+	.email {
+	 	background-color: rgb(127, 157, 149);
+	 	width: 96%;
+		text-align: center;
+		padding: 2%;
+	}
+	.phone {
+	 	background-color: rgb(127, 157, 149);
+	 	width: 96%;
+		text-align: center;
+		padding: 2%;
+	}
+	.copyright {
+		background-color: rgb(127, 157, 149);
+		width: 96%;
+		text-align: center;
+		padding: 2%;
+	}
 
 	/*about.html styling*/
+
+	.aboutView {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+	}
 	.aboutImage {
 		height: 100%;
 		width: 100%;
 	}
-	.aboutView {
-		position: relative;
-	}
 	.aboutText {
-		position: absolute;
+		/*flex: 1; /*This is part of option 2*/
+		position: absolute; /*This is part of option 1*/
 		width: 90%;
 		height: 90%;
 		bottom: 5%;
 		right: 5%;
 		background: rgba(0, 0, 0, 0.75);
 	}
-	.aboutText h1, p {
+	.aboutText p {
 		color: white;
+		padding: 2%;
 	}
 }
 
 @media screen and (min-width:601px) {
+	body {
+		font-size: 20px;
+	}
+	button {
+		font-size: 16px;
+	}
   /*index.html styling*/
 	header {
     display: flex;
@@ -161,14 +290,47 @@ button {
 		border: none;
 		outline: none;
 	}
+	.contactInfo {
+		background-color: rgb(127, 157, 149);
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.info {
+		background-color: rgb(127, 157, 149);
+		width: 29%;
+		text-align: center;
+		padding: 2%;
+		}
+	.email {
+	 	background-color: rgb(127, 157, 149);
+	 	width: 29%;
+		text-align: center;
+		padding: 2%;
+	}
+	.phone {
+	 	background-color: rgb(127, 157, 149);
+	 	width: 29%;
+		text-align: center;
+		padding: 2%;
+	}
+	.copyright {
+		background-color: rgb(127, 157, 149);
+		width: 96%;
+		text-align: center;
+		padding: 2%;
+	}
 
 	/*about.html styling*/
+
+	.aboutView {
+		position: relative;
+		display: flex;
+		flex_wrap: wrap;
+	}
 	.aboutImage {
 		height: 100%;
 		width: 100%;
-	}
-	.aboutView {
-		position: relative;
 	}
 	.aboutText {
 		position: absolute;
@@ -178,7 +340,8 @@ button {
 		right: 5%;
 		background: rgba(0, 0, 0, 0.75);
 	}
-	.aboutText h1, p {
+	.aboutText p {
 		color: white;
+		padding: 2%;
 	}
 }
