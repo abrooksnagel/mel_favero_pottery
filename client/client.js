@@ -29,11 +29,12 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
 app.controller('HomeController', ['$scope', function($scope) {
   $scope.slides = [
-      {image: 'images/IMG_5481.JPG', description: 'Image 00'},
-      {image: 'images/IMG_5471.JPG', description: 'Image 01'},
-      {image: 'images/IMG_5477.JPG', description: 'Image 02'},
-      {image: 'images/IMG_5501.JPG', description: 'Image 03'},
-      {image: 'images/Melissa_2.jpg', description: 'Image 04'}
+      {image: 'images/IMG_5471.JPG', description: 'Image 00'},
+      // {image: 'images/IMG_5481.JPG', description: 'Image 01'},
+      // {image: 'images/IMG_5477.JPG', description: 'Image 02'},
+      // {image: 'images/IMG_6093.JPG', description: 'Image 03'},
+      // {image: 'images/Melissa_1.jpg', description: 'Image 04'},
+      // {image: 'images/IMG_5500.JPG', description: 'Image 05'}
   ];
   //((((((((((((((((((((((((()))))))))))))))))))))))))
   //             this code is untested

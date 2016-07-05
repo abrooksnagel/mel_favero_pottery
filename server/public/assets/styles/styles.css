@@ -48,10 +48,16 @@ table {
 	font-family: 'Slabo 27px';
 	src: url(https://fonts.googleapis.com/css?family=Slabo+27px);
 }
-
-
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	src: url(https://fonts.googleapis.com/css?family=Roboto:300);
+}
+/*@font-face {
+	font-family: 'Roboto:300', sans-serif;
+	src: url(https://fonts.googleapis.com/css?family=Roboto:300);
+}*/
 body, button {
-	font-family: 'Slabo 27px';
+	/*font-family: 'Slabo 27px';*/
 }
 
 /*index.html styling*/
@@ -70,6 +76,7 @@ body, button {
 }
 header {
   background-color: rgb(127, 157, 149);
+	font-family: 'Slabo 27px';
 }
 .logo h1 {
   background-color: rgb(127, 157, 149);
@@ -82,9 +89,11 @@ header {
 }
 button {
   background-color: rgb(127, 157, 149);
+	font-family: 'Slabo 27px';
 }
 footer {
 	background-color: rgb(127, 157, 149);
+
 }
 
 
@@ -96,30 +105,24 @@ footer {
 	height: auto;
 }
 
-/*work.html styling*/
-.workView {
-	background-color: rgba(0, 0, 0, 0.75);
-}
-.workImages img{
-	width: 30%;
-	height: auto;
-	padding: 2%;
-	padding-right: 0;
-}
-.workImages img:hover {
-	position:relative;
-	width: 70%;
-  height: auto;
-	margin: 15%;
-  display: block;
-  z-index: 999;
-}
+
 
 /*shop.html styling*/
 .shopView p {
 	color: red;
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:400px) {
 	/*index.html styling*/
 	header {
@@ -128,6 +131,9 @@ footer {
 	}
 	.logo {
 		width: 100%;
+	}
+	.logo h1, h2 {
+		font-size: 7.8vw;
 	}
 	.navbuttons {
 		width: 100%;
@@ -168,11 +174,11 @@ footer {
 	}
 
 	/*about.html styling*/
-
 	.aboutView {
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
+
 	}
 	.aboutImage {
 		height: 100%;
@@ -186,12 +192,53 @@ footer {
 		bottom: 5%;
 		right: 5%;
 		background: rgba(0, 0, 0, 0.75);
+
 	}
 	.aboutText p {
 		color: white;
 		padding: 2%;
+		font-family: "Roboto", sans-serif;
+		font-style: italic;
+		font-weight: 300;
+	}
+
+	/*work.html styling*/
+	.workView {
+		background-color: rgba(0, 0, 0, 0.75);
+	}
+	.workImages img{
+		width: 96%;
+		height: auto;
+		padding: 2% 2% 0 2%;
+		padding-right: 0;
+	}
+	.workImages img:last-child {
+		width: 96%;
+		height: auto;
+		padding: 2%;
+		/*padding-right: 0;*/
+	}
+	.workImages img:hover {
+		position:relative;
+		width: 70%;
+	  height: auto;
+		margin: 15%;
+	  display: block;
+	  z-index: 999;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width:401px) and (max-width:600px) {
   /*index.html styling*/
@@ -201,6 +248,9 @@ footer {
   }
   .logo {
 		width: 100%;
+	}
+	.logo h1, h2 {
+		font-size: 7.8vw;
 	}
   .navbuttons {
 		width: 100%;
@@ -241,7 +291,6 @@ footer {
 	}
 
 	/*about.html styling*/
-
 	.aboutView {
 		position: relative;
 		display: flex;
@@ -263,8 +312,43 @@ footer {
 	.aboutText p {
 		color: white;
 		padding: 2%;
+		font-family: "Roboto", sans-serif;
+		font-size: 3.7vw;
+		font-style: italic;
+		font-weight: 300;
+	}
+
+	/*work.html styling*/
+	.workView {
+		background-color: rgba(0, 0, 0, 0.75);
+	}
+	.workImages img{
+		width: 46%;
+		height: auto;
+		padding: 2%;
+		padding-right: 0;
+	}
+	.workImages img:hover {
+		position:relative;
+		width: 70%;
+	  height: auto;
+		margin: 15%;
+	  display: block;
+	  z-index: 999;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width:601px) {
 	body {
@@ -279,8 +363,11 @@ footer {
     flex-wrap: wrap;
   }
   .logo {
-    width: 40%;
+    width: 36%;
   }
+	.logo h1, h2 {
+		font-size: 2.8vw;
+	}
   .navbuttons {
     width: 60%;
   }
@@ -322,7 +409,6 @@ footer {
 	}
 
 	/*about.html styling*/
-
 	.aboutView {
 		position: relative;
 		display: flex;
@@ -342,6 +428,31 @@ footer {
 	}
 	.aboutText p {
 		color: white;
-		padding: 2%;
+		padding: 5% 5% 0 5%;
+		font-family: "Roboto", sans-serif;
+		font-size: 2vw;
+		font-style: italic;
+		font-weight: 300;
+	}
+
+	/*work.html styling*/
+	.workView {
+		background-color: rgba(0, 0, 0, 0.75);
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.workImages img{
+		width: 30%;
+		height: auto;
+		padding: 2% 2% 0 2%;
+		padding-right: 0;
+	}
+	.workImages img:hover {
+		position:relative;
+		width: 70%;
+	  height: auto;
+		margin: 15%;
+	  display: block;
+	  z-index: 999;
 	}
 }
