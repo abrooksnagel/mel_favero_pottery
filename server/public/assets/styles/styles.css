@@ -70,9 +70,9 @@ body, button {
 .logoImage {
 	float: left;
 	padding: 2%;
-	width: 23%;
-	height: 23%;
-	transform: rotate(90deg);
+	width: 29%;
+	height: 29%;
+	/*transform: rotate(90deg);*/
 }
 header {
   background-color: rgb(127, 157, 149);
@@ -100,18 +100,82 @@ footer {
 
 
 /*home.html styling*/
-.slide {
+.homeView img {
 	width: 100%;
 	height: auto;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*shop.html styling*/
-.shopView p {
-	color: red;
+.shopView {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+.shopImage {
+	width: 100%;
+	height: 100%;
+}
+.shopText {
+	/*flex: 1;*/
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	bottom: 5%;
+	right: 5%;
+	background: rgba(0, 0, 0, 0.85);
+}
+.shopText h1 {
+	color: white;
+	padding: 2%;
+	font-family: "Roboto", sans-serif;
+	font-style: italic;
+	font-weight: 300;
+}
+.shopText img {
+	width: 15%;
+	height: 15%;
+	padding: 2% 42.5%;
+}
+.shopText p {
+	color: white;
+	font-family: "Slabo 27px";
+	width: 100%;
+	height: auto;
+	text-align: center;
 }
 
+/*contact.html styling*/
+.contactView {
+	width: 100%;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+.contactView h1 {
+	color: white;
+	padding: 5%;
+	font-family: "Roboto", sans-serif;
+	font-style: italic;
+	font-weight: 300;
+	text-align: center;
+	font-size: 7vw;
+}
 
 
 
@@ -133,7 +197,7 @@ footer {
 		width: 100%;
 	}
 	.logo h1, h2 {
-		font-size: 7.8vw;
+		font-size: 7.5vw;
 	}
 	.navbuttons {
 		width: 100%;
@@ -178,7 +242,6 @@ footer {
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
-
 	}
 	.aboutImage {
 		height: 100%;
@@ -192,7 +255,6 @@ footer {
 		bottom: 5%;
 		right: 5%;
 		background: rgba(0, 0, 0, 0.75);
-
 	}
 	.aboutText p {
 		color: white;
@@ -250,7 +312,7 @@ footer {
 		width: 100%;
 	}
 	.logo h1, h2 {
-		font-size: 7.8vw;
+		font-size: 7.5vw;
 	}
   .navbuttons {
 		width: 100%;
@@ -366,7 +428,7 @@ footer {
     width: 36%;
   }
 	.logo h1, h2 {
-		font-size: 2.8vw;
+		font-size: 2.6vw;
 	}
   .navbuttons {
     width: 60%;

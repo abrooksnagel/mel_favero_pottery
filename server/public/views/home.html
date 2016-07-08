@@ -1,12 +1,13 @@
+<div class="homeView">
 
-  <!-- <img src="images/IMG_5481.JPG" alt="blue bowl, two white mugs"> -->
   <div class="container slider">
-      <img ng-repeat="slide in slides" class="slide slide-animation" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+      <img ng-repeat="slide in slides" class="slide animate-show"
+       ng-src="{{slide.image}}">
+      <!--This code would go into the img tag after class:
+      ng-hide="!isCurrentSlideIndex($index)"-->
 
-      <a class="arrow prev" href="#" ng-click="nextSlide()"></a>
-      <a class="arrow next" href="#" ng-click="prevSlide()"></a>
 
-      <nav class="nav">
+      <!-- <nav class="nav">
         <div class="wrapper">
           <ul class="dots">
             <li class="dot" ng-repeat="slide in slides">
@@ -16,5 +17,6 @@
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> -->
   </div>
+</div>
