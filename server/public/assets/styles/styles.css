@@ -72,7 +72,6 @@ body, button {
 	padding: 2%;
 	width: 29%;
 	height: 29%;
-	/*transform: rotate(90deg);*/
 }
 header {
   background-color: rgb(127, 157, 149);
@@ -100,82 +99,35 @@ footer {
 
 
 /*home.html styling*/
-.homeView img {
-	width: 100%;
-	height: auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*shop.html styling*/
-.shopView {
+.homeView {
 	position: relative;
 	display: flex;
-	flex-wrap: wrap;
 }
-.shopImage {
+.homeImage {
 	width: 100%;
 	height: 100%;
 }
-.shopText {
-	/*flex: 1;*/
-	position: absolute;
-	width: 90%;
-	height: 90%;
-	bottom: 5%;
-	right: 5%;
-	background: rgba(0, 0, 0, 0.85);
-}
-.shopText h1 {
-	color: white;
-	padding: 2%;
-	font-family: "Roboto", sans-serif;
-	font-style: italic;
-	font-weight: 300;
-}
-.shopText img {
-	width: 15%;
-	height: 15%;
-	padding: 2% 42.5%;
-}
-.shopText p {
-	color: white;
-	font-family: "Slabo 27px";
-	width: 100%;
-	height: auto;
-	text-align: center;
-}
 
-/*contact.html styling*/
-.contactView {
-	width: 100%;
-	height: auto;
-	background-color: rgba(0, 0, 0, 0.75);
-}
-.contactView h1 {
-	color: white;
-	padding: 5%;
-	font-family: "Roboto", sans-serif;
-	font-style: italic;
-	font-weight: 300;
-	text-align: center;
-	font-size: 7vw;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -272,7 +224,7 @@ footer {
 		width: 96%;
 		height: auto;
 		padding: 2% 2% 0 2%;
-		padding-right: 0;
+		/*padding-right: 0;*/
 	}
 	.workImages img:last-child {
 		width: 96%;
@@ -280,13 +232,83 @@ footer {
 		padding: 2%;
 		/*padding-right: 0;*/
 	}
-	.workImages img:hover {
+	/*.workImages img:hover {
 		position:relative;
 		width: 70%;
 	  height: auto;
 		margin: 15%;
 	  display: block;
 	  z-index: 999;
+	}*/
+
+	/*contact.html styling*/
+	.contactView {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.contactImage {
+		height: 100%;
+		width: 100%;
+	}
+	.contactText {
+		flex: 1; /*This is part of option 2*/
+		/*position: absolute; /*This is part of option 1*/
+		width: 90%;
+		height: 90%;
+		bottom: 5%;
+		right: 5%;
+		background: rgba(0, 0, 0, 0.75);
+	}
+	.contactText p {
+		color: white;
+		padding: 2%;
+		font-family: "Roboto", sans-serif;
+		font-style: italic;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	/*shop.html styling*/
+	.shopView {
+		/*position: relative;*/
+		/*width: 100%;
+		height: 100%;*/
+		display: flex;
+		flex-wrap: wrap;
+		/*background-color: rgba(0, 0, 0, 0.75);*/
+	}
+	.shopText {
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.75);
+	}
+	.shopText h1 {
+		color: white;
+		padding: 2%;
+		font-family: "Roboto", sans-serif;
+		font-style: italic;
+		font-weight: 300;
+	}
+	.shopText img {
+		width: 33.33333%;
+		height: 33.33333%;
+		padding: 2% 33.33333%;
+	}
+	.shopText p {
+		color: white;
+		font-family: "Slabo 27px";
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.shopText p:last-child {
+		color: white;
+		font-family: "Slabo 27px";
+		width: 100%;
+		height: auto;
+		text-align: center;
+		padding-bottom: 2%;
 	}
 }
 
@@ -384,11 +406,22 @@ footer {
 	.workView {
 		background-color: rgba(0, 0, 0, 0.75);
 	}
+	.workImages {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 2% 2% 0;
+	}
 	.workImages img{
-		width: 46%;
-		height: auto;
-		padding: 2%;
-		padding-right: 0;
+		position: relative;
+		width: 48%;
+		height: 48%;
+		padding: 2% 0 0 2%;
+	}
+	.imageSix {
+		order: -1;
+	}
+	.imageOne {
+		order: -2;
 	}
 	.workImages img:hover {
 		position:relative;
@@ -397,6 +430,78 @@ footer {
 		margin: 15%;
 	  display: block;
 	  z-index: 999;
+	}
+
+	/*contact.html styling*/
+	.contactView {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.contactImage {
+		height: 100%;
+		width: 100%;
+	}
+	.contactText {
+		/*flex: 1; /*This is part of option 2*/
+		position: absolute; /*This is part of option 1*/
+		width: 90%;
+		height: 90%;
+		bottom: 5%;
+		right: 5%;
+		background: rgba(0, 0, 0, 0.75);
+	}
+	.contactText p {
+		color: white;
+		font-family: "Roboto", sans-serif;
+		font-style: italic;
+		font-weight: 300;
+		text-align: center;
+		padding: 0 5%;
+	}
+	.contactText p:first-child {
+		padding: 32% 5% 5% 5%;
+	}
+	/*shop.html styling*/
+	.shopView {
+		/*position: relative;*/
+		/*width: 100%;
+		height: 100%;*/
+		display: flex;
+		flex-wrap: wrap;
+		/*background-color: rgba(0, 0, 0, 0.75);*/
+	}
+	.shopText {
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.75);
+	}
+	.shopText h1 {
+		color: white;
+		padding: 2%;
+		font-family: "Roboto", sans-serif;
+		font-style: italic;
+		font-weight: 300;
+	}
+	.shopText img {
+		width: 33.33333%;
+		height: 33.33333%;
+		padding: 2% 33.33333%;
+	}
+	.shopText p {
+		color: white;
+		font-family: "Slabo 27px";
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.shopText p:last-child {
+		color: white;
+		font-family: "Slabo 27px";
+		width: 100%;
+		height: auto;
+		text-align: center;
+		padding-bottom: 2%;
 	}
 }
 
@@ -483,14 +588,15 @@ footer {
 	.aboutText {
 		position: absolute;
 		width: 45%;
-		height: 90%;
-		bottom: 5%;
+		/*height: 90%;*/
+		top: 5%;
 		right: 5%;
+		flex: 0 1 0;
 		background: rgba(0, 0, 0, 0.75);
 	}
 	.aboutText p {
 		color: white;
-		padding: 5% 5% 0 5%;
+		padding: 5%;
 		font-family: "Roboto", sans-serif;
 		font-size: 2vw;
 		font-style: italic;
@@ -500,14 +606,30 @@ footer {
 	/*work.html styling*/
 	.workView {
 		background-color: rgba(0, 0, 0, 0.75);
+		/*display: flex;
+		flex-wrap: wrap;*/
+	}
+	.workImages {
 		display: flex;
 		flex-wrap: wrap;
+		padding: 0 2% 2% 0;
 	}
-	.workImages img{
-		width: 30%;
-		height: auto;
-		padding: 2% 2% 0 2%;
-		padding-right: 0;
+	.workImages img {
+		padding: 2% 0 0 2%;
+	}
+	.imageTwo, .imageThree {
+		order: -1;
+		width: 48%;
+		height: 48%;
+	}
+	.imageOne, .imageSix, .imageSeven {
+		width: 31.3333333%;
+		height: 31.3333333%;
+	}
+	.imageFour, .imageFive {
+		order: 1;
+		width: 48%;
+		height: 48%;
 	}
 	.workImages img:hover {
 		position:relative;
@@ -516,5 +638,84 @@ footer {
 		margin: 15%;
 	  display: block;
 	  z-index: 999;
+	}
+	/*.workImages img:last-child {
+		width: 30%;
+		height: 30%;
+		padding: 2%;
+		padding-right: 0;
+	}*/
+
+	/*contact.html styling*/
+	.contactView {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.contactImage {
+		height: 100%;
+		width: 100%;
+	}
+	.contactText {
+		/*flex: 1; /*This is part of option 2*/
+		position: absolute; /*This is part of option 1*/
+		width: 45%;
+		height: 90%;
+		bottom: 5%;
+		right: 5%;
+		flex: 0 1 0;
+		background: rgba(0, 0, 0, 0.75);
+	}
+	.contactText p {
+		color: white;
+		font-family: "Roboto", sans-serif;
+		font-style: italic;
+		font-weight: 300;
+		padding: 0 5%;
+		text-align: center;
+	}
+	.contactText p:first-child {
+		padding: 32% 5% 5% 5%;
+	}
+	/*shop.html styling*/
+	.shopView {
+		/*position: relative;*/
+		/*width: 100%;
+		height: 100%;*/
+		display: flex;
+		flex-wrap: wrap;
+		/*background-color: rgba(0, 0, 0, 0.75);*/
+	}
+	.shopText {
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.75);
+	}
+	.shopText h1 {
+		color: white;
+		padding: 2%;
+		font-family: "Roboto", sans-serif;
+		font-style: italic;
+		font-weight: 300;
+	}
+	.shopText img {
+		width: 33.33333%;
+		height: 33.33333%;
+		padding: 2% 33.33333%;
+	}
+	.shopText p {
+		color: white;
+		font-family: "Slabo 27px";
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.shopText p:last-child {
+		color: white;
+		font-family: "Slabo 27px";
+		width: 100%;
+		height: auto;
+		text-align: center;
+		padding-bottom: 2%;
 	}
 }
