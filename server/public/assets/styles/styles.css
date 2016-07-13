@@ -230,6 +230,7 @@ footer {
 		font-family: "Roboto", sans-serif;
 		font-style: italic;
 		font-weight: 300;
+		text-align: center;
 	}
 	.shopText img {
 		width: 33.33333%;
@@ -398,14 +399,17 @@ footer {
 	.imageOne {
 		order: -2;
 	}
-	.workImages img:hover {
+	.workImages img:last-child {
+		padding: 2% 23% 0 27%;
+	}
+	/*.workImages img:hover {
 		position:relative;
 		width: 70%;
 	  height: auto;
 		margin: 15%;
 	  display: block;
 	  z-index: 999;
-	}
+	}*/
 
 	/*shop.html styling*/
 	.shopView {
@@ -610,14 +614,14 @@ footer {
 		width: 48%;
 		height: 48%;
 	}
-	.workImages img:hover {
+	/*.workImages img:hover {
 		position:relative;
 		width: 70%;
 	  height: auto;
 		margin: 15%;
 	  display: block;
 	  z-index: 999;
-	}
+	}*/
 	/*.workImages img:last-child {
 		width: 30%;
 		height: 30%;
@@ -645,6 +649,7 @@ footer {
 		font-family: "Roboto", sans-serif;
 		font-style: italic;
 		font-weight: 300;
+		font-size: 2vw;
 	}
 	.shopText img {
 		width: 33.33333%;
@@ -692,6 +697,7 @@ footer {
 		font-family: "Roboto", sans-serif;
 		font-style: italic;
 		font-weight: 300;
+		font-size: 2vw;
 		padding: 0 5%;
 		text-align: center;
 	}
