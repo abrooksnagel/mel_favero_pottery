@@ -45,7 +45,7 @@ table {
 
 /*Styling*/
 @font-face {
-	font-family: 'Slabo 27px';
+	font-family: 'Slabo 27px', serif;
 	src: url(https://fonts.googleapis.com/css?family=Slabo+27px);
 }
 @font-face {
@@ -68,7 +68,7 @@ table {
 }
 header, button {
   background-color: rgb(127, 157, 149);
-	font-family: 'Slabo 27px';
+	font-family: 'Slabo 27px', serif;
 }
 .logo h1, .logo h2, .navbuttons {
   background-color: rgb(127, 157, 149);
@@ -209,14 +209,14 @@ footer {
 	}
 	.shopText p {
 		color: white;
-		font-family: "Slabo 27px";
+		font-family: "Slabo 27px", serif;
 		width: 100%;
 		height: auto;
 		text-align: center;
 	}
 	.shopText p:last-child {
 		color: white;
-		font-family: "Slabo 27px";
+		font-family: "Slabo 27px", serif;
 		width: 100%;
 		height: auto;
 		text-align: center;
@@ -393,14 +393,14 @@ footer {
 	}
 	.shopText p {
 		color: white;
-		font-family: "Slabo 27px";
+		font-family: "Slabo 27px", serif;
 		width: 100%;
 		height: auto;
 		text-align: center;
 	}
 	.shopText p:last-child {
 		color: white;
-		font-family: "Slabo 27px";
+		font-family: "Slabo 27px", serif;
 		width: 100%;
 		height: auto;
 		text-align: center;
@@ -602,14 +602,14 @@ footer {
 	}
 	.shopText p {
 		color: white;
-		font-family: "Slabo 27px";
+		font-family: "Slabo 27px", serif;
 		width: 100%;
 		height: auto;
 		text-align: center;
 	}
 	.shopText p:last-child {
 		color: white;
-		font-family: "Slabo 27px";
+		font-family: "Slabo 27px", serif;
 		width: 100%;
 		height: auto;
 		text-align: center;
