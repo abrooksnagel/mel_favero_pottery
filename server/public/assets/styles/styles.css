@@ -80,6 +80,8 @@ footer {
 /*home.html styling*/
 .homeView {
 	position: relative;
+	display: -webkit-flex;
+	/*-webkit-flex-wrap: wrap;*/
 	display: flex;
 }
 .homeImage {
@@ -90,6 +92,8 @@ footer {
 @media screen and (max-width:400px) {
 	/*index.html styling*/
 	header {
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -109,6 +113,8 @@ footer {
 	.contactInfo {
 		background-color: rgb(127, 157, 149);
 		width: 100%;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -140,6 +146,8 @@ footer {
 	/*about.html styling*/
 	.aboutView {
 		position: relative;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -148,12 +156,15 @@ footer {
 		width: 100%;
 	}
 	.aboutText {
+		-webkit-box-flex: 1;
 		flex: 1; /*This is part of option 2*/
 		/*position: absolute; /*This is part of option 1*/
-		width: 90%;
+		/*width: 90%;
 		height: 90%;
 		bottom: 5%;
-		right: 5%;
+		right: 5%;*/
+		width: 100%;
+		height: 100%;
 		background: rgba(0, 0, 0, 0.75);
 	}
 	.aboutText p {
@@ -185,6 +196,8 @@ footer {
 		/*position: relative;*/
 		/*width: 100%;
 		height: 100%;*/
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: flex;
 		flex-wrap: wrap;
 		/*background-color: rgba(0, 0, 0, 0.75);*/
@@ -226,6 +239,8 @@ footer {
 	/*contact.html styling*/
 	.contactView {
 		position: relative;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -236,10 +251,12 @@ footer {
 	.contactText {
 		flex: 1; /*This is part of option 2*/
 		/*position: absolute; /*This is part of option 1*/
-		width: 90%;
+		/*width: 90%;
 		height: 90%;
 		bottom: 5%;
-		right: 5%;
+		right: 5%;*/
+		width: 100%;
+		height: 100%;
 		background: rgba(0, 0, 0, 0.75);
 	}
 	.contactText p {
@@ -261,6 +278,8 @@ footer {
 @media screen and (min-width:401px) and (max-width:600px) {
   /*index.html styling*/
 	header {
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
   }
@@ -280,6 +299,8 @@ footer {
 	.contactInfo {
 		background-color: rgb(127, 157, 149);
 		width: 100%;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -311,6 +332,8 @@ footer {
 	/*about.html styling*/
 	.aboutView {
 		position: relative;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -341,7 +364,8 @@ footer {
 		background-color: rgba(0, 0, 0, 0.75);
 	}
 	.workImages {
-		display: -webkit-box;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: -moz-box;
 		display: flex;
 		flex-wrap: wrap;
@@ -354,9 +378,11 @@ footer {
 		padding: 2% 0 0 2%;
 	}
 	.imageSix {
+		-webkit-order: -1;
 		order: -1;
 	}
 	.imageOne {
+		-webkit-order: -2;
 		order: -2;
 	}
 	.workImages img:last-child {
@@ -368,7 +394,8 @@ footer {
 		/*position: relative;*/
 		/*width: 100%;
 		height: 100%;*/
-		display: -webkit-box;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: -moz-box;
 		display: flex;
 		flex-wrap: wrap;
@@ -410,6 +437,8 @@ footer {
 	/*contact.html styling*/
 	.contactView {
 		position: relative;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -451,7 +480,8 @@ footer {
 	}
   /*index.html styling*/
 	header {
-		display: -webkit-box;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: -moz-box;
     display: flex;
     flex-wrap: wrap;
@@ -467,7 +497,7 @@ footer {
   }
 	button {
 		width: 19%;
-		height: 100%;
+		height: 9vw; /*changed from 100% to fix safari layout*/
 		border: none;
 		outline: none;
 	}
@@ -475,10 +505,10 @@ footer {
 		background-color: rgb(127, 157, 149);
 		width: 100%;
 		display: -webkit-flex; /*changed from -webkit-box;*/
+		-webkit-flex-wrap: wrap; /*added this to go with webkit-flex*/
 		display: -moz-box;
 		display: flex;
 		flex-wrap: wrap;
-		-webkit-flex-wrap: wrap; /*added this to go with webkit-flex*/
 	}
 	.info {
 		background-color: rgb(127, 157, 149);
@@ -508,7 +538,8 @@ footer {
 	/*about.html styling*/
 	.aboutView {
 		position: relative;
-		display: -webkit-box;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: -moz-box;
 		display: flex;
 		flex_wrap: wrap;
@@ -542,7 +573,8 @@ footer {
 		flex-wrap: wrap;*/
 	}
 	.workImages {
-		display: -webkit-box;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: -moz-box;
 		display: flex;
 		flex-wrap: wrap;
@@ -553,6 +585,7 @@ footer {
 	}
 	.imageTwo, .imageThree {
 		order: -1;
+		-webkit-order: -1;
 		width: 48%;
 		height: 48%;
 	}
@@ -562,6 +595,7 @@ footer {
 	}
 	.imageFour, .imageFive {
 		order: 1;
+		-webkit-order: 1;
 		width: 48%;
 		height: 48%;
 	}
@@ -577,7 +611,8 @@ footer {
 		/*position: relative;*/
 		/*width: 100%;
 		height: 100%;*/
-		display: -webkit-box;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: -moz-box;
 		display: flex;
 		flex-wrap: wrap;
@@ -620,7 +655,8 @@ footer {
 	/*contact.html styling*/
 	.contactView {
 		position: relative;
-		display: -webkit-box;
+		display: -webkit-flex;
+		-webkit-flex-wrap: wrap;
 		display: -moz-box;
 		display: flex;
 		flex-wrap: wrap;
