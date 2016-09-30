@@ -64,7 +64,7 @@ table {
 	float: left;
 	padding: 2%;
 	width: 29%;
-	height: 29%;
+	/*height: 29%;*/
 }
 header, button {
   background-color: rgb(127, 157, 149);
@@ -474,10 +474,11 @@ footer {
 	.contactInfo {
 		background-color: rgb(127, 157, 149);
 		width: 100%;
-		display: -webkit-box;
+		display: -webkit-flex; /*changed from -webkit-box;*/
 		display: -moz-box;
 		display: flex;
 		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap; /*added this to go with webkit-flex*/
 	}
 	.info {
 		background-color: rgb(127, 157, 149);
