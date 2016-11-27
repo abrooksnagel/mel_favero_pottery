@@ -81,8 +81,9 @@ footer {
 .homeView {
 	position: relative;
 	display: -webkit-flex;
-	/*-webkit-flex-wrap: wrap;*/
+	-webkit-flex-wrap: wrap;
 	display: flex;
+	flex-wrap: wrap;
 }
 .homeImage {
 	width: 100%;
@@ -141,6 +142,37 @@ footer {
 		width: 96%;
 		text-align: center;
 		padding: 10px;
+	}
+	/*home.html styling*/
+	.currentEvent {
+		position: absolute;
+		width: 90%;
+		height: 90%;
+		top: 5%;
+		right: 5%;
+		flex: 0 1 0;
+		background: rgba(0, 0, 0, 0.75);
+	}
+	.currentEvent p {
+		color: white;
+		font-family: "Roboto", sans-serif;
+		font-style: italic;
+		font-weight: 300;
+		font-size: 4vw;
+		/*padding: 2% 5%;*/
+		text-align: center;
+	}
+	.currentEvent p:first-child {
+		padding: 20% 15% 2% 15%;
+	}
+	.currentEvent p:nth-child(2) {
+		padding: 2% 15% 0 15%;
+	}
+	.currentEvent p:nth-child(3) {
+		padding: 0 15% 2% 15%;
+	}
+	.currentEvent p:nth-child(5){
+		padding: 4% 0 0 0;
 	}
 
 	/*about.html styling*/
@@ -327,6 +359,37 @@ footer {
 		width: 96%;
 		text-align: center;
 		padding: 10px;
+	}
+	/*home.html styling*/
+	.currentEvent {
+		position: absolute;
+		width: 90%;
+		height: 90%;
+		top: 5%;
+		right: 5%;
+		flex: 0 1 0;
+		background: rgba(0, 0, 0, 0.75);
+	}
+	.currentEvent p {
+		color: white;
+		font-family: "Roboto", sans-serif;
+		font-style: italic;
+		font-weight: 300;
+		font-size: 4vw;
+		/*padding: 2% 5%;*/
+		text-align: center;
+	}
+	.currentEvent p:first-child {
+		padding: 20% 15% 2% 15%;
+	}
+	.currentEvent p:nth-child(2) {
+		padding: 2% 15% 0 15%;
+	}
+	.currentEvent p:nth-child(3) {
+		padding: 0 15% 2% 15%;
+	}
+	.currentEvent p:nth-child(5){
+		padding: 4% 0 0 0;
 	}
 
 	/*about.html styling*/
@@ -533,6 +596,37 @@ footer {
 		width: 96%;
 		text-align: center;
 		padding: 10px;
+	}
+	/*home.html styling*/
+	.currentEvent {
+		position: absolute;
+		width: 45%;
+		height: 45%;
+		top: 5%;
+		right: 27.5%;
+		flex: 0 1 0;
+		background: rgba(0, 0, 0, 0.75);
+	}
+	.currentEvent p {
+		color: white;
+		font-family: "Roboto", sans-serif;
+		font-style: italic;
+		font-weight: 300;
+		font-size: 2.2vw;
+		/*padding: 2% 5%;*/
+		text-align: center;
+	}
+	.currentEvent p:first-child {
+		padding: 16% 15% 2% 15%;
+	}
+	.currentEvent p:nth-child(2) {
+		padding: 2% 15% 0 15%;
+	}
+	.currentEvent p:nth-child(3) {
+		padding: 0 15% 2% 15%;
+	}
+	.currentEvent p:nth-child(5){
+		padding: 4% 0 0 0;
 	}
 
 	/*about.html styling*/
